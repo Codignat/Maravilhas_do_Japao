@@ -1,2 +1,4 @@
-# Maravilhas_do_Japao
- Curso de Git e GitHub
+# Maravilhas do Japão
+ Repositório criado com a finalidade acadêmica.
+
+ Aplicando teorias em um projeto prático.
