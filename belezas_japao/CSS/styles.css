@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.textBody{
+    padding: 0 30px;
+}
+body {
+    font-family: "Arial, sans-serif";
+    line-height: 1.6;
+}
+.Conteiner {
+    max-width: 1280;
+    margin: auto;
+}
+#pricipal{
+    padding: 30px;
+    
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#blz{
+    text-align: center;
+    width: 100%;
+}
+header {
+    background-color: #f2e6e7;
+    width: 100%;
+    padding-left: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 1s;
+}
+
+.Conteiner {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+img {
+    height: 50px;
+    width: 50px;
+}
+.navBar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navBar ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+.navBar ul li a:hover {
+    background-color: #e020bd;
+    border-radius: 5px;
+}
+section {
+    padding: 60px;
+}
+#img {
+    max-width: 100%;
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin-bottom: 1rem;
+}
+/*img1*/
+.imagebackground{
+    background-image: url(/Maravilhas_do_Japao/belezas_japao/imagens/monte_fuji/monte.webp);
+    background-repeat: no-repeat, repeat;
+    height: 600px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    filter: translate(-50%,-50%);
+    justify-content: center;
+}
+.H1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 1px;
+    font-size: 2.5em;
+    text-align: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+.texto3 {
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 10;
+    
+}
+.texto3 h3 {
+    font-size: 3em;
+    margin-bottom: 80px;
+    margin-top: 60px;
+    margin-right: 80px;
+    justify-content: center;
+    align-items: center;  
+}
+.texto3 p {
+    font-size: 1.2em;
+    text-align: center;
+}
+.texto2 {
+    background-color: #f2e6e7;
+    max-width: 800px;
+    margin: 0 auto;
+    
+    border-radius: 3px;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.5);
+    position: relative;
+    top: -90px;
+    border: 1px solid rgb(12, 12, 12);
+}
+h3 {
+    color: #000;   
+}
+.texto2 h3 {
+    text-align: center;
+}
+.texto {
+    padding: 10px;
+    border-radius: 20px;
+    background-color:#cfd3dc97 ;
+    color: #030303;
+    font-size: 18px;
+    font-weight: bold;
+}
+.cards-section {
+    background-color: #f2e6e7;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card-icon img {
+width: 100%;
+height: 10%;
+object-fit: cover;
+border-top-left-radius: 8px;
+border-top-right-radius: 8px;
+}
+.card h3 {
+    padding-top: 15px;
+    color: #333;
+}
+.card p {
+    color: #555;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: justify;
+}
+.card:hover {
+    transform: translateY(-10px);
+    transform: scale(1.05);
+    box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.8);
+    position: relative;
+    top: -50px;
+}
+
+/*img1 pg2*/
+.primeira_img {
+    background-image: url(/Maravilhas_do_Japao//belezas_japao/imagens/monte_fuji/fuji_primeira.jpg);
+    background-repeat: no-repeat, repeat;
+    height: 600px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    filter: translate(-50%,-50%);
+    justify-content: center;
+    border-radius: 10px;
+}
+.Conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+img {
+    height: 50px;
+    width: 50px;
+}
+.navBar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navBar ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.navBar ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+section {
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.img-containerT , .img-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.img-container img, .img-containerT img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.img-containerT div {
+    flex: 1;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; 
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #000;
+}
+/*pg3*/
+main3 {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+section.destaques .lugares {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+section.destaques article {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+section.destaques img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.map-section iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+}
+section.contato form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+section.contato input, section.contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+section.contato button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+footer {
+    background-color: #fff;
+    border-top: solid 1px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer{
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .img-container, .img-containerT {
+        flex-direction: column;
+    }
+    img {
+        max-width: 100%;
+    }
+    .img-containerT div,.content {
+        padding: 0;
+    }
+}
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navBar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .cards-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    #quadrado {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .texto3 {
+        padding: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .navBar ul {
+        gap: 5px;
+    }
+    .card {
+        width: 100%;
+    }
+    .texto3 {
+        width: 100%;
+    }
+}
+
+.primeiro-p{
+    text-align: justify;
+    padding: 0 20px;
+}
+#titulo-p2{
+    text-align: center;
+}
