@@ -5,76 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belezas Naturais do Japão</title>
     <link rel="stylesheet" href="/belezas_japao/CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<header id="header" class="rolagem">
+  <div class="Conteiner">
+      <div class="flex">
+          <a href="feedback.html"><img id="imagemlogo" src="/belezas_japao/imagens/logo.png" alt="Logo"></a>
+          <nav>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="destino.html">DESTINO</a></li>
+                <li><a href="guiacompleto.html">DESTAQUES</a></li>
+                <li><a href="galeria.html">CURIOSIDADES</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+</header>
 <body>
-    <header id="header">
-        <div class="Conteiner">
-            <div class="flex">
-                <a href="#"><img src="/belezas_japao/imagens/logo.png" alt="Logo"></a>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="destino.html">DESTINO</a></li>
-                        <li><a href="guiacompleto.html">GUIA COMPLETO</a></li>
-                        <li><a href="feedback.html">CONTATO</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-
     <section class="banner">
         <h1>VISITE O JAPÃO</h1>
     </section>
     <main>
         <div class="img-text">
             <div class="img-img">
-                <img src="/belezas_japao/imagens/japao.jpg" alt="Japão">
+                <img id="imagem-jp" src="/belezas_japao/imagens/japao.jpg" alt="Japão">
             </div>
             <div class="texto3">
                 <p>O Japão é um país que vai muito além de suas cidades modernas e tecnologia. Ele é também um lugar cheio de paisagens naturais incríveis, que vão desde montanhas majestosas até praias tranquilas e cavernas impressionantes. Entre as atrações mais famosas, temos o Monte Fuji, Caverna Akiyoshido e Takachiho, cada uma com suas particularidades. Vamos explorar esses lugares fascinantes e entender por que eles são tão importantes para o Japão e para quem visita o país.</p>
             </div>
         </div>
-        
-
         <section class="cards-section">
+          <div class="card" onclick="showModal(1)">
+              <div class="card-icon">
+                  <img src="/belezas_japao/imagens/img_home/Takachiho.jpg" alt="Takachiho" class="card-img" data-text="">
+              </div>
+              <h3>Takachiho</h3>
+              <button class="saiba-mais" onclick="window.location.href='/belezas_japao/html/destino.html'">Saiba Mais</button>
+          </div>
+        
+          <div class="card" onclick="showModal(2)">
+              <div class="card-icon">
+                  <img src="/belezas_japao/imagens/img_home/Monte Fuji2usar.jpg" alt="Monte Fuji" class="card-img" data-text="">
+              </div>
+              <h3>Monte Fuji</h3>
+              <button class="saiba-mais" onclick="window.location.href='/belezas_japao/html/destino.html'">Saiba Mais</button>
+          </div>
+          
+          <div class="card" onclick="showModal(3)">
+              <div class="card-icon">
+                  <img src="/belezas_japao/imagens/img_home/Akiyoshido2.jpg" alt="Akiyoshi-do" class="card-img" data-text="">
+              </div>
+              <h3>Akiyoshi-do</h3>
+              <button class="saiba-mais" onclick="window.location.href='/belezas_japao/html/destino.html'">Saiba Mais</button>
+          </div>
+      </section>
+      <section id="conhecer">
+        <div class="text-btn">
+            <span>Gostaria de conhecer mais?</span>
+        </div>
+        <div>
+            <a href="destino.html"><button class="btn">Conhecer Mais</button></a>
+        </div>
+    </section>
+    
+  </main>
 
-            <div class="card">
-                <div class="card-icon">
-                    <img src="/belezas_japao/imagens/img_home/Takachiho.jpg" alt="Takachiho">
-                </div>
-                <h3>Takachiho</h3>
-                <p>
-                    Conhecido por suas águas cristalinas da montanha, o Desfiladeiro de Takachiho é o orgulho da região. Ele foi formado há mais de 100.000 anos como resultado da atividade vulcânica das imediações.
-                </p>
-            </div>
+  <div id="footer-container"></div>
+    
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
 
-            <div class="card">
-                <div class="card-icon">
-                    <img src="/belezas_japao/imagens/img_home/Monte Fuji2usar.jpg" alt="Monte Fuji">
-                </div>
-                <h3>Monte Fuji</h3>
-                <p>
-                    O Monte Fuji é o símbolo do Japão e a montanha sagrada mais venerada pelos japoneses. Trata-se de um vulcão inativo desde 1708 que se ergue a mais de 2.400 metros de altura.
-                </p>
-            </div>
-            
-            <div class="card">
-                <div class="card-icon">
-                    <img src="/belezas_japao/imagens/img_home/Akiyoshido2.jpg" alt="Akiyoshi-do">
-                </div>
-                <h3>Akiyoshi-do</h3>
-                <p>
-                    Akiyoshi-do é uma caverna espetacular e uma das maiores atrações naturais do Japão, localizada no Parque Nacional de Akiyoshidai Quasi, na província de Yamaguchi.
-                </p>
-            </div>
-        </section>
+  
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal()">&times;</button>
+      <h2 id="modal-titulo"></h2>
+      <p id="modal-texto"></p>
+    </div>
+  </div>
 
-
-    </main>
-    <footer>
-        <p>&copy; 2024 Belezas Naturais do Japão</p>
-    </footer>
-    <script src="/belezas_japao/js/script.js"></script>
+  <script src="/belezas_japao/js/script.js"></script>
 </body>
 </html>

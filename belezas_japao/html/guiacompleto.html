@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belezas Naturais do Japão</title>
     <link rel="stylesheet" href="/belezas_japao/CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header id="header">
         <div class="Conteiner">
             <div class="flex">
-                <a href="#"><img src="/belezas_japao/imagens/logo.png" alt="Logo"></a>
+                <a href="#"><img id="imagemlogo" src="/belezas_japao/imagens/logo.png" alt="Logo"></a>
                 <nav>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="destino.html">DESTINO</a></li>
-                        <li><a href="guiacompleto.html">GUIA COMPLETO</a></li>
-                        <li><a href="feedback.html">CONTATO</a></li>
+                        <li><a href="guiacompleto.html">DESTAQUES</a></li>
+                        <li><a href="galeria.html">CURIOSIDADES</a></li>
                     </ul>
                 </nav>
             </div>
@@ -24,71 +25,100 @@
     </header>
     <section class="banner2">
         <h1></h1>
+        
     </section>
-
     <main class="main3">
-
         <section class="destaques">
             <h2>Lugares em Destaque</h2>
-
             <div class="lugares">
-
                 <article class="img-lugar">
-                    
                     <img src="/belezas_japao/imagens/img_home/Monte Fuji2usar.jpg" alt="Monte Fuji">
-                    <h3>Monte Fuji</h3>
-                    <p>O símbolo do Japão e a montanha mais venerada.</p>
-                </article>
-
-                <article class="img-lugar">
+                    <div id="titulodesc">
+                        <h3>Monte Fuji</h3>
+                        <p>O símbolo do Japão e a montanha mais venerada.</p>
+                    </div>
                     
-                    <img src="/belezas_japao/imagens/akiyoshido/Akiyoshi-do2.jpg" alt="Akiyoshido">
-                    <h3>Akiyoshido</h3>
+                </article>
+                <article class="img-lugar">
+                    <img src="/belezas_japao/imagens/akiyoshido/Akiyoshi-do2.jpg" height="100" alt="Akiyoshido">
+                    <div id="titulodesc">
+                        <h3>Akiyoshido</h3>
                     <p>Uma caverna espetacular e uma das maiores atrações naturais.</p>
-                </article>
-
-                <article class="img-lugar">
+                    </div>
                     
-                    <img src="/belezas_japao/imagens/takachiho/Takachiho2.jpg" alt="Takachiho">
-                    <h3>Takachiho</h3>
-                    <p>Desfiladeiro com águas cristalinas e história vulcânica.</p>
                 </article>
-            
-            </div>
-        </section>
-        <section>
-            <div>
-                <div class="div-vidio">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/B5DvTmMmveM?si=sbzF3cgPEhfhTbZL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mg-mrdnN-OY?si=LUvnB9jgzfrM-OQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Gs0mwdy6-o8?si=PYKNAAESG8PzzndA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+                <article class="img-lugar">
+                    <img src="/belezas_japao/imagens/takachiho/Takachiho2.jpg" alt="Takachiho">
+                    <div id="titulodesc">
+                        <h3>Takachiho</h3>
+                    <p>Desfiladeiro com águas cristalinas e história vulcânica.</p>
+                    </div>
+                    
+                </article>
             </div>
         </section>
 
-        <section class="map-section">
-            <h2>Mapa Interativo</h2>
-            <div>
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26030.39498985855!2d138.72736339999994!3d35.36062499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019629a42fdc899%3A0xa6a1fcc916f3a4df!2sMonte%20Fuji!5e0!3m2!1spt-BR!2sbr!4v1727468827780!5m2!1spt-BR!2sbr" width="550" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section id="carousel-container">
+            <div class="carousel-container">
+                <button class="carousel-btn prev">&#10094;</button>
+                <div class="carousel">
+                    <div class="div-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/B5DvTmMmveM?si=sbzF3cgPEhfhTbZL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="div-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mg-mrdnN-OY?si=LUvnB9jgzfrM-OQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="div-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Gs0mwdy6-o8?si=PYKNAAESG8PzzndA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="div-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GilxxKcSy1U?si=umaKAAJSsTHmZ-y6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="div-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/abj4pZOg198?si=v63_mHDQr6zmYXjL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="div-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/g4bDe-OV4xA?si=Up8wxol9jEm4MlTz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.8004766018025!2d131.3009598747639!3d34.228112608425164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35449e73eb87e567%3A0x17151858db59774c!2sAkiyoshido%20Cave!5e0!3m2!1spt-BR!2sbr!4v1727469071875!5m2!1spt-BR!2sbr" width="550" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d862825.5324943336!2d130.5247130670899!3d32.35448518249013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35472cddfea5092f%3A0x58795d299dc91f8b!2sTakachiho%20Gorge!5e0!3m2!1spt-BR!2sbr!4v1727469443468!5m2!1spt-BR!2sbr" width="550" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>  
+                <button class="carousel-btn next">&#10095;</button>
             </div>
-           
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Belezas Naturais do Japão</p>
-    </footer>
-    <script src="/belezas_japao/js/script.js"></script>
+        <section id="form">
+            <div class="feedback-form">
+                <h2>Deixe seu Feedback</h2>
+                <form id="form-feedback">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Seu nome">
+                    <div class="error" id="name-error"></div>
+        
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail">
+                    <div class="error" id="email-error"></div>
+        
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Sua mensagem"></textarea>
+                    <div class="error" id="message-error">
+                    
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <section id="map">
+            <div id="map1"></div>
+        </section>
+  </main>
+  <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=SUA_CHAVE_DE_API&callback=initMap&libraries=&v=weekly" async defer></script>
+  <script src="/belezas_japao/js/script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAItIFPREu9YJVzgf6nihv_IT30lAH7wXo&callback=initMap"> </script>
 </body>
 </html>

@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belezas</title>
     <link rel="stylesheet" href="/belezas_japao/CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header id="header">
         <div class="Conteiner">
             <div class="flex">
-                <a href="#"><img src="/belezas_japao/imagens/logo.png" alt="Logo"></a>
+                <a href="#"><img id="imagemlogo" src="/belezas_japao/imagens/logo.png" alt="Logo"></a>
                 <nav>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="destino.html">DESTINO</a></li>
-                        <li><a href="guiacompleto.html">GUIA COMPLETO</a></li>
-                        <li><a href="feedback.html">CONTATO</a></li>
+                        <li><a href="guiacompleto.html">DESTAQUES</a></li>
+                        <li><a href="galeria.html">CURIOSIDADES</a></li>
                     </ul>
                 </nav>
             </div>
@@ -92,10 +93,10 @@
 
             <div class="img-containerT">
                <div>
-                <div class="primeira">
-                    <h2>As cavernas de Akiyoshido</h2>
-                    <p>Ande por entre as árvores e atravesse a ponte sobre o rio até a caverna conhecida como Akiyoshido. A caverna é grande, com uma passarela bem conservada. A luz suave preserva a atmosfera deste lugar incrível e ilumina as deslumbrantes piscinas de calcário, estalactites e estalagmites, gerando um grande efeito. A água que atravessa a caverna também faz disso uma experiência aural, à medida que reduz o calcário a formas cada vez mais fantásticas.</p>
-                </div>
+                    <div class="primeira">
+                        <h2>As cavernas de Akiyoshido</h2>
+                        <p>Ande por entre as árvores e atravesse a ponte sobre o rio até a caverna conhecida como Akiyoshido. A caverna é grande, com uma passarela bem conservada. A luz suave preserva a atmosfera deste lugar incrível e ilumina as deslumbrantes piscinas de calcário, estalactites e estalagmites, gerando um grande efeito. A água que atravessa a caverna também faz disso uma experiência aural, à medida que reduz o calcário a formas cada vez mais fantásticas.</p>
+                    </div>
                </div>
             </div>
 
@@ -149,9 +150,14 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Belezas Naturais do Japão</p>
-    </footer>
+    <div id="footer-container"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
     <script src="/belezas_japao/js/script.js"></script>
 </body>
 </html>
