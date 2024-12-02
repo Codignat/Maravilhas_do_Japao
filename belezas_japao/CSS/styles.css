@@ -218,10 +218,6 @@ header ul li a:hover {
     transform: scale(0.98); 
 }
 
-
-/*2° pagina*/
-
-
 main {
     background-color: #ffaa9c;
 }
@@ -307,9 +303,6 @@ footer {
     color: #fff;
 }
 
-
-
-/*pg3*/
 .main3 {
     background-color: #ffccbd;
 }
@@ -407,6 +400,98 @@ section.contato button {
         margin-top: 0.5rem;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .header ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+        padding: 0 20px;
+    }
+
+    .img-containerT img, .img-container2 img {
+        max-width: 200px;
+        margin: 20px;
+    }
+
+    .card {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .btn {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .carousel-container, .carousel-container-galeria {
+        width: 90%;
+    }
+
+    .carousel-btn {
+        font-size: 25px;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        height: auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-size: 1.8em;
+    }
+
+    .img-containerT img, .img-container2 img {
+        max-width: 150px;
+        margin: 10px auto;
+    }
+
+    .destaques .lugares {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .img-lugar {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .feedback-form {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #galeria {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
 
 .fa-brands{
     color: #000;
@@ -681,7 +766,7 @@ h1.titulo {
     width: 80%;
     overflow: hidden;
     height: 300px;
-    margin: 0 auto; /* Centraliza horizontalmente */
+    margin: 0 auto; 
     justify-content: center;
     align-items: center;
     display: flex;
@@ -696,27 +781,27 @@ h1.titulo {
 .carousel-item-galeria {
     min-width: 33.33%;
     box-sizing: border-box;
-    height: 100%; /* Ocupa toda a altura do contêiner */
-    background-color: #fff; /* Para realçar as margens visivelmente */
+    height: 100%; 
+    background-color: #fff; 
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+    justify-content: center;
+    align-items: center; 
 }
 
 .carousel-item-galeria:last-child {
-    margin-right: 0; /* Remove o espaço no último item para alinhar */
+    margin-right: 0; 
 }
 
 .carousel-item-galeria img {
     width: 100%;
-    height: 100%; /* Faz a imagem preencher todo o item */
-    object-fit: cover; /* Ajusta a imagem sem distorção */
+    height: 100%; 
+    object-fit: cover; 
     display: block;
-    transition: transform 0.3s ease-in-out; /* Suaviza o efeito de transformação */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .carousel-item-galeria img:hover {
-    transform: scale(1.2); /* Aumenta a imagem em 20% */
+    transform: scale(1.2); 
 }
 
 .carousel-btn-galeria {
