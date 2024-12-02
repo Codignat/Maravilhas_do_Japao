@@ -59,7 +59,7 @@ header ul li a:hover {
 }
 .banner{
     height: 100vh;
-    background: url(/belezas_japao/imagens/monte_fuji/fuji_lido.jpg) center/cover no-repeat;
+    background: url(/imagens/monte_fuji/fuji_lido.jpg) center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,7 +175,6 @@ header ul li a:hover {
     background-color: #6e5368be;
     transform: scale(1.05);
 }
-
 .saiba-mais:active {
     background-color: #6e5368f1; 
     transform: scale(0.98);
@@ -222,8 +221,8 @@ main {
     background-color: #ffaa9c;
 }
 .banner1{
-    height: 100vh;
-    background: url(/belezas_japao/imagens/monte_fuji/monte.webp) center/cover no-repeat;
+    height: 80vh;
+    background: url(/imagens/monte_fuji/monte.webp) center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,7 +287,7 @@ main {
 
 .banner2{
     height: 80vh;
-    background: url(/belezas_japao/imagens/guia_completo.jpg) center/cover no-repeat;
+    background: url(/imagens/guia_completo.jpg) center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -365,8 +364,6 @@ section.contato button {
     border: none;
     cursor: pointer;
 }
-
-
 @media screen and (max-width:1330px){
     .form-image {
         display: none;
@@ -612,7 +609,7 @@ object-fit: cover;
 
 #form{
     height: 100vh;
-    background: url(/belezas_japao/imagens/imgformulario.jpg) center/cover no-repeat;
+    background: url(/imagens/imgformulario.jpg) center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -748,8 +745,6 @@ h1.titulo {
     line-height: 1.6;
 }
 
-/**/
-
 #galeria {
     font-family: Arial, sans-serif;
     display: flex;
@@ -840,7 +835,7 @@ h1.titulo {
 .g-banner {
 
     height: 100vh;
-    background: url(/belezas_japao/imagens/img_galeria/curiosidade.jpg) center/cover no-repeat;
+    background: url(/imagens/img_galeria/curiosidade.jpg) center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -921,3 +916,68 @@ h1.titulo {
 #titulodesc{
     padding: 12px;
 }
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    .banner {
+        padding: 20px 10px;
+        height: auto;
+        text-align: center;
+    }
+    .banner h1 {
+        font-size: 1.5em;
+    }
+    .img-containerT img, .img-container2 img {
+        max-width: 120px;
+        margin: 5px auto;
+    }
+    .destaques .lugares {
+        flex-direction: column; 
+        gap: 10px;
+    }
+    .card {
+        width: 100%; 
+        margin: 10px 0;
+    }
+    .btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    header ul {
+        flex-direction: column; 
+        gap: 15px;
+    }
+    .banner {
+        height: 60vh; 
+    }
+    .img-containerT img,
+    .img-container2 img {
+        max-width: 180px;
+        margin: 10px;
+    }
+    .cards-section {
+        flex-direction: column; 
+        gap: 20px;
+    }
+    footer {
+        height: auto;
+        padding: 20px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1330px) {
+    .Conteiner {
+        padding: 0 10px;
+    }
+    .card {
+        width: 40%; 
+    }
+}
+

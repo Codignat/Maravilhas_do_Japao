@@ -37,11 +37,30 @@ function showModal(cardId) {
   
     modal.style.display = 'flex';
   }
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+  
+    const imagens = document.querySelectorAll('.img-containerT img, .img-container2 img');
+
+    imagens.forEach(imagem => {
+        imagem.addEventListener('mouseover', () => {
+            imagem.style.transition = 'transform 0.3s ease'; 
+            imagem.style.transform = 'scale(1.2)'; 
+        });
+
+        imagem.addEventListener('mouseout', () => {
+            imagem.style.transform = 'scale(1)'; 
+        });
+    });
+});
+
+
   
 function closeModal() {
     const modal = document.getElementById('modal');
     modal.style.display = 'none';
-  }
+}
   
 let currentScroll = 0;
 const carousel = document.querySelector('.carousel');
@@ -64,6 +83,7 @@ function scrollLeft() {
 
 document.querySelector('.carousel-btn.next').addEventListener('click', scrollRight);
 document.querySelector('.carousel-btn.prev').addEventListener('click', scrollLeft);
+
 
 function initMap() {
 

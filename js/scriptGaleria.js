@@ -24,10 +24,26 @@ const prevSlide = () => {
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
 
-// Mostrar a posição inicial
+
 showCarousel();
 
 window.addEventListener("scroll", function () {
     let header = document.querySelector("#header");
     header.classList.toggle("rolagem", window.scrollY > 100);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const imagens = document.querySelectorAll('.carousel-item-galeria img, .gl-texto-img img');
+
+    imagens.forEach(img => {
+        img.style.transition = 'transform 0.3s ease'; 
+        img.addEventListener('mouseover', () => {
+            img.style.transform = 'scale(1.2)';
+        });
+
+        img.addEventListener('mouseout', () => {
+            img.style.transform = 'scale(1)'; 
+        });
+    });
+});
+
